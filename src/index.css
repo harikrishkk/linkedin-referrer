@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwinf abstractions */
+@layer components {
+  .banner-wrapper {
+    @apply max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12;
+  }
+  .banner-header {
+    @apply max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto;
+  }
+  .banner-desc {
+    @apply antialiased text-base text-gray-700 md:text-lg;
+  }
+  .register-btn {
+    @apply inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-900 focus:outline-none;
+  }
+  .footer-wrapper {
+    @apply grid gap-10 row-span-6 mb-8 sm:grid-cols-2 lg:grid-cols-4;
+  }
+  .footer-link {
+    @apply tracking-wide antialiased transition-colors duration-300 text-gray-300;
+  }
+  .navbar-wrapper {
+    @apply px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8;
+  }
+  .bullet-list-wrapper {
+    @apply grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0;
+  }
+  .at-middle {
+    @apply flex justify-center mb-8;
+  }
+  .download-btn-group {
+    @apply btn-group rounded-none;
+  }
+  .download-btn {
+    @apply btn btn-outline btn-sm rounded-none;
+  }
+  .feature-wrapper {
+    @apply flex flex-col justify-center;
+  }
+  .feature-header {
+    @apply mb-4 text-sm font-bold tracking-widest uppercase;
+  }
+  .feature-image {
+    @apply object-cover w-full h-56 rounded shadow-lg sm:h-96;
+  }
+  .copyright-wrapper {
+    @apply flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row;
+  }
+  .copyright-text {
+    @apply tracking-wide antialiased text-sm text-gray-300;
+  }
+  .trademark {
+    @apply flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row;
+  }
+  .purpose-info {
+    @apply tracking-wide antialiased text-sm text-gray-300;
+  }
+  .tie-ups-info {
+    @apply tracking-wide antialiased mt-4 text-sm text-gray-300;
+  }
+  .login-wrapper {
+    @apply flex flex-col items-center h-screen md:flex-row;
+  }
+  .login-banner {
+    @apply relative hidden w-full h-screen lg:block md:w-1/3 xl:w-1/3;
+  }
+  .login-image {
+    @apply absolute object-cover w-full h-full;
+  }
+  .login-mode-wrapper {
+    @apply flex w-full h-screen px-6 md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/3 lg:px-16 xl:px-12;
+  }
+  .login-header {
+    @apply my-12 font-black tracking-tighter text-black text-5xl;
+  }
+  .logo-text {
+    @apply ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase;
+  }
+  .navdesktop-wrapper {
+    @apply flex items-center hidden space-x-8 lg:flex;
+  }
+  .nav-item {
+    @apply font-medium tracking-wide text-gray-100;
+  }
+  .navmobile-hamburger {
+    @apply p-2 -mr-1 transition duration-200 rounded focus:outline-none;
+  }
+  .navmob-wrapper {
+    @apply absolute top-0 left-0 w-full;
+  }
+  .mob-close-btn {
+    @apply p-2 -mt-2 -mr-2 transition duration-200 rounded bg-white hover:bg-gray-200 focus:bg-gray-200 focus:outline-none;
+  }
+  .user-profile-wrapper {
+    @apply relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm  group hover:shadow-xl;
+  }
+  .upload-wrapper {
+    @apply bg-white;
+  }
+  .upload-container {
+    @apply max-w-3xl px-6 py-16 mx-auto text-center;
+  }
+  .upload-header-text {
+    @apply text-3xl font-semibold text-gray-800;
+  }
+  .upload-desc {
+    @apply max-w-md mx-auto mt-5 text-gray-500;
+  }
+  .csv-container {
+    @apply flex flex-col mt-8 space-y-3 sm:space-y-0 sm:flex-row sm:justify-center sm:-mx-2;
+  }
+  .browse-file-button-wrapper {
+    @apply flex flex-col overflow-hidden border rounded-lg lg:flex-row;
+  }
+  .browse-file {
+    @apply px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-gray-700;
+  }
+  .browse-file-name {
+    @apply px-6 py-3 text-gray-700 placeholder-gray-500 bg-white outline-none  focus:placeholder-transparent;
+  }
+}
+
+/* Custom css loader..*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
