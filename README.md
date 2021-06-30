@@ -20,6 +20,9 @@ Two modes - Recruiter login as well as Candiate login ( via harper db )
 - Recruiters get to download the profiles as excel (csv ) if they wish to. 
 - The only input that we ask is pretty basic - Your name, your skillsets and linkeidn profile URL. Thats it!
 - We do not collect any personal information / neither shares them with anyone. ( After all, I am on a free plan ;) )
+- Responsive - ( of course )
+- Zero custom styles added - Pure tailwind classes used for development.
+- React hooks & contexts used along with react-hooks-form library , smooth scroll to top library and utilizing HarperDb authentication & tokens. 
 
 ## Further feature add-ons projected 
 
