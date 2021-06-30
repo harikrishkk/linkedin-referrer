@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# LinkedIn referrer a.k.a Refurr.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is built with React, HarperDB, and Tailwind.
 
-## Available Scripts
+## Reason behind building this project
 
-In the project directory, you can run:
+When recruiters approach us with potential job opportunities, if we are not in the job market right now, it will be helpful if we can refer someone else within our linkedin connections to recruiters. We never know, one such referral may end up in a job / career change. We say, "hey i will loop the JD through my network and if anyone within our network is available, I'd loop them back to you." - But this may be a tedious process. Moreover, we may forget to follow up ourselves. 
+Profiles usually contain personal information like emails / phone numbers which is sensitive information and need not be collected or shared without consent. That's why refurr asks only your linkedin profile URL. If you are a professional looking for jobs, a LinkedIn profile is a must have. So just provide your linkedin profile Url and let recruiters take a look at your profile and reach out to them. 
 
-### `yarn start`
+## Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The stack used is React, Tailwind, and harperDB 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features 
 
-### `yarn test`
+Two modes - Recruiter login as well as Candiate login ( via harper db )
+- In recruiter login, we get to see the home page as well as profile page - Thats what matters to recruiters
+- In candidate mode, we can see extra links for registration
+- We have one more link for direct Uploads. We can have the data in a CSV and can be directly populated to the data base if we like bulk uploads. 
+- Recruiters get to download the profiles as excel (csv ) if they wish to. 
+- The only input that we ask is pretty basic - Your name, your skillsets and linkeidn profile URL. Thats it!
+- We do not collect any personal information / neither shares them with anyone. ( After all, I am on a free plan ;) )
+- Responsive - ( of course )
+- Zero custom styles added - Pure tailwind classes used for development.
+- React hooks & contexts used along with react-hooks-form library , smooth scroll to top library and utilizing HarperDb authentication & tokens. 
+- Pretty great Lighthouse scores in Desktop and mobile ( Yes, performance is a must! )
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Further feature add-ons projected 
 
-### `yarn build`
+- Deletion of profiles based on user logins 
+- Upload word / pdf resumes 
+- PWA to add Home page icons and offline caches
+- Batch deletion of profiles after a certain time periods. ( say 90 days )
+- Integration with Linkedin API to fetch more details to be displayed in the profile section including Profile pic. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Lighthouse scores:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screen Shot 2021-06-29 at 8 48 11 PM](https://user-images.githubusercontent.com/5024456/123885409-69f5e880-d91b-11eb-92a9-5f6c17b6b0b7.png)
 
-### `yarn eject`
+[Application deployed here](https://linkedin-referrer.vercel.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Screenshots
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Home Page 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![REFER CANDIDATES](https://user-images.githubusercontent.com/5024456/123884339-036fcb00-d919-11eb-9e4a-eac1cd69c758.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Login Page 
 
-## Learn More
+![REFER CANDIDATES (4)](https://user-images.githubusercontent.com/5024456/123884373-15ea0480-d919-11eb-850c-7daec44bc6a1.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Profiles Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![REFER CANDIDATES (1)](https://user-images.githubusercontent.com/5024456/123884400-269a7a80-d919-11eb-8a8b-43213e39e800.png)
 
-### Code Splitting
+Register Page 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![REFER CANDIDATES (2)](https://user-images.githubusercontent.com/5024456/123884417-32863c80-d919-11eb-99d4-63d24f1c5f2a.png)
 
-### Analyzing the Bundle Size
+Uploads Page 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![REFER CANDIDATES (3)](https://user-images.githubusercontent.com/5024456/123884438-3e71fe80-d919-11eb-9cd6-59fad734a422.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
