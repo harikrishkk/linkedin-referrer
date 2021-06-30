@@ -23,6 +23,7 @@ Two modes - Recruiter login as well as Candiate login ( via harper db )
 - Responsive - ( of course )
 - Zero custom styles added - Pure tailwind classes used for development.
 - React hooks & contexts used along with react-hooks-form library , smooth scroll to top library and utilizing HarperDb authentication & tokens. 
+- Pretty great Lighthouse scores in Desktop and mobile ( Yes, performance is a must! )
 
 ## Further feature add-ons projected 
 
@@ -31,6 +32,13 @@ Two modes - Recruiter login as well as Candiate login ( via harper db )
 - PWA to add Home page icons and offline caches
 - Batch deletion of profiles after a certain time periods. ( say 90 days )
 - Integration with Linkedin API to fetch more details to be displayed in the profile section including Profile pic. 
+
+
+Lighthouse scores:
+
+![Screen Shot 2021-06-29 at 8 48 11 PM](https://user-images.githubusercontent.com/5024456/123885409-69f5e880-d91b-11eb-92a9-5f6c17b6b0b7.png)
+
+[Application deployed here](https://linkedin-referrer.vercel.app/)
 
 ## Screenshots
 
